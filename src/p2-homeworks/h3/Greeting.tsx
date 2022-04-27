@@ -19,14 +19,15 @@ const Greeting: React.FC<GreetingPropsType> = ({
                                                    totalUsers,
                                                    onInputKeyPressHandler
                                                }) => {
-    const inputClass = error.length > 0 ? s.error : s.allowed
+    let inputClass = error.length > 0 ? s.error : s.allowed;
+
 
     return (
         <div className={s.container}>
             <input value={name}
                    onChange={setNameCallback}
                    className={inputClass}
-                   onKeyPress={onInputKeyPressHandler}
+                   onKeyDown={onInputKeyPressHandler}
             />
             <button className={s.myButton} onClick={addUser}> add</button>
             <span> {totalUsers} </span>

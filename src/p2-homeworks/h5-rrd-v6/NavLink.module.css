@@ -1,0 +1,91 @@
+.container {
+    width: 400px;
+    transition: all 1500ms ease;
+    position: relative;
+    left: -300px;
+}
+
+.container:hover {
+    left: 0;
+}
+
+.firstLink {
+    color: #2b9348;
+    line-height: 1.2;
+    position: relative;
+    padding: 0 14px;
+    font-weight: 400;
+}
+
+.firstLink:after {
+    content: "";
+    height: 100%;
+    min-width: 4px;
+    background: #34495e;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .5s;
+}
+
+.firstLink:hover:after {
+    min-width: 100%;
+    background: #95a5a6;
+    opacity: .35;
+}
+
+.secondLink {
+    color: #bfd200;
+    line-height: 1.2;
+    position: relative;
+    padding: 0 14px;
+    font-weight: 600;
+}
+
+.secondLink:after {
+    content: "";
+    height: 100%;
+    min-width: 4px;
+    background: #34495e;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .5s;
+}
+
+.secondLink:hover:after {
+    min-width: 100%;
+    background: #95a5a6;
+    opacity: .35;
+}
+
+.thirdLink {
+    color: #38b000;
+    line-height: 1.2;
+    position: relative;
+    padding: 0 14px;
+    font-weight: 900;
+}
+
+.thirdLink:after {
+    content: "";
+    height: 100%;
+    min-width: 4px;
+    background: #34495e;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .5s;
+}
+
+.thirdLink:hover:after {
+    min-width: 100%;
+    background: #95a5a6;
+    opacity: .35;
+}
+
+
+.link {
+    text-decoration: none;
+    font-size: 18px;
+}
