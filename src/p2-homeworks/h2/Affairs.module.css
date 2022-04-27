@@ -1,3 +1,16 @@
 .main {
     margin-left: 15px;
 }
+
+.high:hover {
+    background-color: red;
+}
+
+.middle:hover {
+    background-color: orange;
+}
+
+.low:hover {
+    background-color: greenyellow;
+
+}
