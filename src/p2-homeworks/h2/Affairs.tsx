@@ -1,11 +1,11 @@
 import React from 'react'
 import Affair from './Affair'
-import {AffairType} from './HW2'
+import {AffairType, FilterType} from './HW2'
 import style from './Affairs.module.css'
 
 type AffairsPropsType = { // need to fix any
     data: AffairType[]
-    setFilter: Function
+    setFilter: (filter: FilterType) => void
     deleteAffairCallback: (_id: number) => void;
 }
 
@@ -22,7 +22,7 @@ function Affairs(props: AffairsPropsType) {
     const setHigh = () => props.setFilter('high');
     const setMiddle = () => props.setFilter('middle');
     const setLow = () => props.setFilter('low');
-    
+
     return (
         <div>
 
