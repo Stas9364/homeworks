@@ -19,8 +19,8 @@ const Greeting: React.FC<GreetingPropsType> = ({
                                                    totalUsers,
                                                    onInputKeyPressHandler
                                                }) => {
-    let inputClass = error.length > 0 ? s.error : s.allowed;
 
+    let inputClass = error.length > 0 ? s.error : s.allowed;
 
     return (
         <div className={s.container}>
