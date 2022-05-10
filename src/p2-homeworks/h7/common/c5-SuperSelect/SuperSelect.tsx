@@ -20,7 +20,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
             value={o}>
             {o}
         </option>
-    )) : []; // map options with key
+    )) : [];
 
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
